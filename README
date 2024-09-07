@@ -1,0 +1,5 @@
+Usage: mp < infile > outfile
+
+This program pads UTF-8 text to the nearest multiple of 5 bytes using 'X'.
+It reads from stdin and writes to stdout, allowing use in pipelines.
+
