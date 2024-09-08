@@ -56,7 +56,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Fprintf(os.Stderr, "File successfully padded.\n")
+	fmt.Fprintf(os.Stderr, "Data successfully padded.\n")
 	fmt.Fprintf(os.Stderr, "Original size: %d bytes\n", len(input))
 	fmt.Fprintf(os.Stderr, "Padded size: %d bytes\n", len(paddedContent))
 }
