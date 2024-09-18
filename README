@@ -1,5 +1,5 @@
-Usage: mp [-p 8] < infile > outfile
+Usage: mp [-p 5] < infile > outfile
 
-This program pads UTF-8 text to the nearest multiple of 5 (default) or 8 bytes using 'X'.
+This program pads UTF-8 text to the nearest multiple of 4 (default) or 5 bytes using 'X'.
 It reads from stdin and writes to stdout, allowing use in pipelines.
 
