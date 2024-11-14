@@ -25,19 +25,19 @@ func padText(text []byte, paddingSize int) []byte {
 }
 
 func printUsage() {
-	fmt.Fprintln(os.Stderr, "Usage: mp [-p 5] < infile > outfile")
-	fmt.Fprintln(os.Stderr, "\nThis program pads UTF-8 text to the nearest multiple of 4 (default) or 5 bytes using 'X'.")
+	fmt.Fprintln(os.Stderr, "Usage: mp [-p 4] < infile > outfile")
+	fmt.Fprintln(os.Stderr, "\nThis program pads UTF-8 text to the nearest multiple of 5 (default) or 4 bytes using 'X'.")
 	fmt.Fprintln(os.Stderr, "It reads from stdin and writes to stdout, allowing use in pipelines.")
 	fmt.Fprintln(os.Stderr, "\nFlags:")
-	fmt.Fprintln(os.Stderr, "  -p 5\tPad to multiples of 5 instead of 4")
+	fmt.Fprintln(os.Stderr, "  -p 4\tPad to multiples of 4 instead of 5")
 }
 
 func main() {
-	flag.IntVar(&paddingSize, "p", 4, "Padding size (4 or 5)")
+	flag.IntVar(&paddingSize, "p", 5, "Padding size (4 or 5)")
 	flag.Parse()
 
-	if paddingSize != 4&& paddingSize != 5 {
-		fmt.Fprintln(os.Stderr, "Invalid padding size. Use 4 (default) or 5.")
+	if paddingSize != 4 && paddingSize != 5 {
+		fmt.Fprintln(os.Stderr, "Invalid padding size. Use 5 (default) or 4.")
 		printUsage()
 		os.Exit(1)
 	}
