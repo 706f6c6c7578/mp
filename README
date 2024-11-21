@@ -1,6 +1,6 @@
 Usage: mp [-p 4] < infile > outfile
 
-This program pads UTF-8 text to the nearest multiple of 5 (default) or 4 bytes using 'X'.
+This program pads UTF-8 text to the nearest multiple of 5 (default) or 4 bytes using random uppercase letters.  
 It reads from stdin and writes to stdout, allowing use in pipelines.
 
 The program is intended for usage with my XChaCha20, Adiantum, polyenc and cce programs.
