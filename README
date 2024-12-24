@@ -4,5 +4,5 @@ This program pads UTF-8 text to the nearest multiple of 16 (default) or 5 bytes 
 
 It reads from stdin and writes to stdout, allowing use in pipelines.
 
-The program is intended for usage with my XChaCha20, Adiantum, polyenc and cce programs.
+The program is intended for usage with my XChaCha20, Adiantum, polyenc, cce and az programs.
 
